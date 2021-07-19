@@ -1,0 +1,13 @@
+.mainBox {
+    border: solid black 5px;
+    height: 250px;
+    width: 300px;
+    margin: 20px 20px;
+
+
+}
+.InnerBox {
+    height: 200px;
+    width: 300px;
+    background-color: brown;
+}
