@@ -20,18 +20,38 @@ import React from "react";
 //   }
 // }
 
-class App extends React.Component{
- 
-render(){
- return(<div>
-   <h1>hello</h1>
-   </div>
- )
+class App extends React.Component {
+  state = { axel: 0 };
+
+
+Up = () => {
+    this.setState(()=>({axel: this.state.axel + 1}))
+    console.log("its going up");
+  }
+  
+  Down =() => {
+    this.setState(()=>({axel: this.state.axel - 1})
+  
+
+    )
+  }
 
 
 
+
+  render() {
+    return(
+    <div className="mainBox" >
+      <h3>lets play</h3>
+      <button onClick={this.Up}>increase </button>
+      <p>{this.state.axel}</p>
+      <button onClick={this.Down}>decrease </button>
+      
+      
+      
+       </div> )
+    
+  }
 }
-}
-
 
 export default App;
